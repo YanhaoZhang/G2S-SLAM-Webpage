@@ -1,0 +1,233 @@
+<!-- Code Link. -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Increasing SLAM Pose Accuracy by Ground-to-Satellite Image Registration">
+  <meta name="keywords" content="G2S-SLAM-Fusion">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Increasing SLAM Pose Accuracy by Ground-to-Satellite Image Registration" />
+  <meta property="og:description" content="Increasing SLAM Pose Accuracy by Ground-to-Satellite Image Registration" />
+  <!-- <meta property="og:image" content="https://YanhaoZhang.github.io/megane/static/images/flowchart.pdf" /> -->
+  <title>Increasing SLAM Pose Accuracy by Ground-to-Satellite Image Registration</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T834G2HR2M"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-T834G2HR2M');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Increasing SLAM Pose Accuracy by Ground-to-Satellite Image Registration</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://sites.google.com/view/yanhaozhang/home">Yanhao Zhang</a>,</span>
+              <span class="author-block">
+                <a href="https://yujiaoshi.github.io/">Yujiao Shi</a>,</span>
+            <span class="author-block">
+              <a href="https:/ShanWang-Shan.github.io">Shan Wang</a>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=EUS0qnEAAAAJ&hl=en">Ankit Vora</a>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=wPNd0xkAAAAJ&hl=en">Akhil Perincherry</a>,</span>
+              <span class="author-block">
+                <a href="https://sites.google.com/view/yongbochen/home">Yongbo Chen</a>,</span>
+            <span class="author-block">
+              <a href="http://users.cecs.anu.edu.au/~hongdong/">Hongdong Li</a>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">University of Technology Sydney,</span>
+            <span class="author-block">ShanghaiTech University,</span>
+            <span class="author-block">Australian National University,</span>
+            <span class="author-block">CSIRO, </span>
+            <span class="author-block">Ford Motor Company</span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">ICRA 2024</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2404.09169"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/YanhaoZhang/SLAM-G2S-Fusion.git"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Poster Link. -->
+              <span class="link-block">
+                <a href="https://YanhaoZhang.github.io/megane/static/images/ICRA2024_poster.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-alt"></i>
+                  </span>
+                  <span>Poster</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video id="visualization" autoplay muted loop playsinline height="100%">
+        <source src="./static/images/ICRA2024-G2S-SLAM-Fusion.mp4"
+                type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+        <p>
+          We propose a framework that integrates a ground-to-satellite (G2S) cross-view registration method with visual SLAM for autonomous driving. Loop closure, which is crucial for reducing localization error, is not always available in autonomous driving. Conversely, G2S registration avoids error accumulation but lacks robustness. Our goal is to combine the advantages of both methods to achieve precise vision-based vehicle localization.
+        </p>
+        </div>
+        <!-- <div class="publication-video">
+          <img src="./static/images/SIBCL.png" alt="Teaser" style="width:100%;">
+        </div> -->
+      </div>
+    </div>
+    <!--/ Paper video. -->
+
+
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Method Overview</h2>
+        <div class="content has-text-justified">
+          <p>
+            Our approach is straightforward: after obtaining the trajectory through visual SLAM, we implement a two-stage process to select valid G2S results: a coarse check using spatial correlation bounds, followed by a fine check using visual odometry consistency. The validated G2S results are then fused with the visual odometry from SLAM by solving a scaled pose graph.
+          </p>
+        </div>
+        <div class="publication-video">
+          <img src="./static/images/flowchart.jpg" alt="Teaser" style="width:100%;">
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Trajectory</h2>
+        <div class="content has-text-justified">
+          <p>
+            Experimental results demonstrate that our proposed method achieves high trajectory accuracy even without loop closure.
+          </p>
+        </div>
+        <div class="publication-video">
+          <img src="./static/images/trajectory_6.jpg" alt="Teaser" style="width:100%;">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+      @article{zhang2024increasing,
+        title={Increasing SLAM Pose Accuracy by Ground-to-Satellite Image Registration},
+        author={Zhang, Yanhao and Shi, Yujiao and Wang, Shan and Vora, Ankit and Perincherry, Akhil and Chen, Yongbo and Li, Hongdong},
+        journal={arXiv preprint arXiv:2404.09169},
+        year={2024}
+      }
+    </code></pre>
+    <div class="content has-text-justified">
+      <p>
+        Please do not hesitate to contact me at 
+        <a href="yanhaozhang1991@gmail.com">yanhaozhang1991@gmail.com</a>, or
+        <a href="yanhao.zhang@uts.edu.au">yanhao.zhang@uts.edu.au</a> 
+        for any questions. 
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <!-- <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p> -->
+          <p>
+            This website borrows the template from <a
+              href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
